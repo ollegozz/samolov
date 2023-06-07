@@ -50,7 +50,7 @@ body {
 }
 
 [class*="__container"] {
-	max-width: 1400px;
+	max-width: 1431px;
 	margin: 0px auto;
 	padding: 0px 15px;
 }
@@ -91,7 +91,12 @@ body {
 	border-radius: 50px;
 	padding: 27px 50px;
 	cursor: pointer;
+}
 
+.button:hover {
+	color: #EA501E;
+	background: #ffff;
+	box-shadow: 10px 5px 5px #EA501E;
 }
 
 /* ------------- */
@@ -142,9 +147,12 @@ body {
 	padding: 7px 38px;
 	text-transform: none;
 	background: #CBE3BF;
-
-
+	border-radius: 50px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 100%;
 }
+
 /* --------------------------- */
 .menu {
 	display: flex;
@@ -287,14 +295,15 @@ body {
 }
 
 .skill__container {
-	/* padding: 102px 0 0 0; */
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;	
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 .skill__content {
-	flex: 0 1 48%;
+	flex: 0 1 45%;
 	padding: 219px 0;
 }
 
@@ -309,6 +318,7 @@ body {
 	font-weight: 800;
 	font-size: 54px;
 	line-height: 120%;
+	padding: 20px 0 30px 0;
 }
 
 .skill__content_title span {
@@ -320,17 +330,74 @@ body {
 	font-size: 24px;
 	line-height: 150%;
 	color: #474747;
+	padding: 0 0 50px 0;
 }
-.skill__content_button {
 
+.skill__content_img-arr {
+	position: absolute;
+	left: 34%;
+	top: 43%;
 }
+
+.skill__content_button {}
 
 .skill__image {
 	flex: 0 1 48%;
+	padding-left: 35px;
+}
+
+.skill__image_stars {
+	position: absolute;
+	top: 26%;
+	left: 48%;
+}
+
+
+/* =========================================================== */
+
+.about__container {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	background: #F0F7EC;
+	border-radius: 50px;
+	justify-content: space-evenly;
+}
+
+.about__content {
+	flex: 0 1 58%;	
+}
+
+.about__content_title {
+	font-weight: 800;
+	font-size: 54px;
+	line-height: 120%;
+	padding: 20px 0 30px 0;
+}
+
+.about__content_title span {
+	color: #EA501E;
+}
+
+.about__content_subtitle {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 150%;
+	color: #474747;
+}
+
+.about__content_subtitle p:last-child {
+	padding: 15px 0 50px 0;
+}
+
+.about__content_button {}
+
+.about__image {
+	flex: 0 1 38%;
 	padding: 171px 0;
 }
 
-/* =========================================================== */
+/* ============================================= */
 
 .footer {
 	padding: 45px 0;
