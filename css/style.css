@@ -478,7 +478,7 @@ body {
 	top: 75%;
 }
 
-/* ================================================ */
+/* ===================== delegation =========================== */
 .delegation {
 	padding: 140px 0;
 }
@@ -867,6 +867,74 @@ body {
 	background: rgba(5, 6, 7, 0.2);
 	margin: 0 5px;
 }
+
+/* =================== question =================== */
+
+.question {
+	padding: 140px 0;
+}
+
+.question__container {
+	position: relative;
+	flex-wrap: wrap;
+	background: #F0F7EC;
+	border-radius: 50px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 120px;
+}
+
+.question__content_title {
+	padding: 0 0 65px 0;
+}
+
+.question__content_text-list {
+	
+}
+
+.question__content_text-list_item {
+	border-bottom: 1px solid #050607;
+	padding-top: 35px;
+}
+
+.question__content_text-list_question {
+	display: flex;
+	align-items: center;
+	padding: 0 0 27px 0;
+	justify-content: space-between;
+}
+
+.question__content_text-list_question-text {
+	font-weight: 800;
+		font-size: 20px;
+		line-height: 100%;	
+		text-transform: uppercase;	
+		color: #050607;
+}
+
+.question__content_text-list_question img {
+	padding-right: 20px;
+}
+
+
+.question__content_text-list_answer {
+	max-width: 90%;
+	font-weight: 500;
+	line-height: 150%;
+	color: #474747;
+	font-size: 16px;
+	padding-bottom: 35px;
+}
+
+.question__container_sign-img {
+	position: absolute;
+	transform: rotate(35.04deg);
+	top: 1%;
+	left: 75%;
+}
+
+/* ============== form ================================== */
+
 
 
 /* =================================================== */
