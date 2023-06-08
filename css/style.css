@@ -93,6 +93,10 @@ body {
 	cursor: pointer;
 }
 
+.button a {
+	color: #FFFFFF;
+}
+
 .button:hover {
 	color: #EA501E;
 	background: #ffff;
@@ -364,6 +368,9 @@ body {
 
 
 /* =========================================================== */
+.about {
+	padding-top: 120px;
+}
 
 .about__container {
 	position: relative;
@@ -554,19 +561,128 @@ body {
 /* =================================================== */
 
 .footer {
-	padding: 45px 0;
+	background-image: url(/img/image/footer/footer-fone.png);
 }
+
 .footer__container {
 }
 .footer__items {
 	display: flex;
 	column-gap: 50px;
 	row-gap: 20px;
-	justify-content: center;
 	align-items: center;
+	padding: 90px 0;
 }
-.footer__item {
+
+.footer__items a {
+	font-weight: 700;
+	line-height: 100%;
+	font-size: 16px;
+	color: #050607;
+	padding: 10px 0;
 }
+
+
+
+.footer__items-author {
+	flex: 0 1 25%;
+}
+
+.footer__items-author_title {
+	font-weight: 700;
+	line-height: 100%;
+	font-size: 32px;
+	padding-bottom: 50px;
+}
+
+.footer__items-author_button {
+	background: #fff;	
+	border: 2px solid #EA501E;
+	border-radius: 50px;
+}
+
+.footer__items-author_button a {
+	color: #EA501E;
+}
+
+.footer__items-contact {
+	flex: 0 1 18%;
+}
+
+.footer__items-contact_title {
+	font-weight: 800;
+	line-height: 100%;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 16px 0 30px 0;
+}
+
+.footer__items-contact_phone {
+	padding-bottom: 16px;
+}
+
+.footer__items-contact_mail {
+
+}
+
+.footer__items-about {
+	flex: 0 1 18%;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__items-review {
+	flex: 0 1 18%;
+	flex-direction: column;
+	display: flex;
+}
+
+.footer__items-social {
+	flex: 0 1 18%;
+}
+
+.footer__items-social img {
+	padding-left: 3px;
+} 
+
+
+/* ----------------------------- */
+.footer__dev {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0 30px 0;
+	border-top: 1px solid rgba(71, 71, 71, 0.2);
+}
+
+.footer__dev a {
+	font-weight: 500;
+	line-height: 150%;
+	color: #474747;
+	font-size: 16px;
+}
+
+.dev-left{
+	display: flex;
+	font-weight: 500;
+	line-height: 150%;
+	color: #474747;
+	font-size: 16px;
+}
+
+.dev-left_conf a{
+	color: #050607;
+	padding: 0 0 0 51px;
+}
+
+.dev-right {
+	display: flex;	
+}
+
+.dev-right_link {
+	padding: 0 20px 0 0;
+}
+
+
 
 @media (max-width: 500px) {
 	.footer {
