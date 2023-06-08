@@ -755,6 +755,118 @@ body {
 	right: 101%;
 }
 
+/* ============ carousel ============================= */
+
+.carousel {
+	padding: 226px 0 140px;
+}
+
+.carousel__container {	
+	position: relative;	
+	background-image: url(/img/image/carousel/carousel-fone.png);
+}
+
+.carousel__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+}
+
+
+.carousel__action-items {
+	padding: 90px 0 50px 0;
+	display: flex;
+	flex-wrap: nowrap;
+	/* overflow: hidden */
+}
+
+.carousel__action-item {
+	min-width: 680px;
+	min-height: 281px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 59px rgba(129, 129, 129, 0.22);
+	border-radius: 30px;
+	border: 1px solid #050607;
+	padding: 40px;
+	margin-right: 40px;
+	
+}
+
+.carousel__action-item_header-block {
+	display: flex;
+	align-items: center;
+}
+
+.carousel__action-item_header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+	
+.carousel__action-item_header-text_title {
+	padding: 0 0 8px 20px;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 120%;
+	text-transform: uppercase;	
+	color: #050607;
+}
+
+.carousel__action-item_header-text_subtitle {
+	padding: 0 0 0 20px;
+	font-weight: 500;
+	line-height: 150%;
+	color: #474747;
+	font-size: 14px;
+}
+
+.carousel__action-item_text {
+	font-weight: 500;
+	line-height: 150%;
+	font-size: 14px;
+	color: #474747;
+	padding: 20px 0 30px 0;
+}
+
+.carousel__action-item_footer {
+	display: flex;
+	align-items: center;
+}
+
+.carousel__action-item_footer p{
+	font-weight: 700;
+	line-height: 110%;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;	
+	color: #EA501E;
+	font-size: 16px;
+	align-items: center;
+	padding-right: 10px;
+}
+
+.carousel__action-counter {
+	display: flex;
+	align-items: center;
+}
+
+.carousel__action-counter_arr {
+	padding-left: 32px;
+}
+
+._arrleft {
+	rotate: 180deg;
+}
+
+
+
+.carousel__action-counter_point {
+	border-radius: 50%;
+	width: 8px;
+	height: 8px;
+	background: rgba(5, 6, 7, 0.2);
+	margin: 0 5px;
+}
 
 
 /* =================================================== */
@@ -820,8 +932,12 @@ body {
 	padding-bottom: 16px;
 }
 
-.footer__items-contact_mail {
+.footer__items-contact_phone img{
+	padding-right: 16px;
+}
 
+.footer__items-contact_mail img{
+	padding-right: 16px;
 }
 
 .footer__items-about {
