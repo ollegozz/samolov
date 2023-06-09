@@ -1032,7 +1032,7 @@ body {
 /* ============ carousel ============================= */
 
 .carousel {
-	padding: 226px 0 140px;
+	padding: 226px 15px 140px 15px;
 }
 
 .carousel__container {	
@@ -1046,12 +1046,16 @@ body {
 	align-items: center;	
 }
 
+.carousel__header_image-min {
+	display: none;
+}
+
 
 .carousel__action-items {
 	padding: 90px 0 50px 0;
 	display: flex;
 	flex-wrap: nowrap;
-	/* overflow: hidden */
+	overflow: hidden
 }
 
 .carousel__action-item {
@@ -1132,14 +1136,55 @@ body {
 	rotate: 180deg;
 }
 
-
-
 .carousel__action-counter_point {
 	border-radius: 50%;
 	width: 8px;
 	height: 8px;
 	background: rgba(5, 6, 7, 0.2);
 	margin: 0 5px;
+}
+
+@media (max-width: 1270px) {
+	.carousel__header_image {
+		display: none;
+	}
+	.carousel__header_image-min {
+		display: inline-block;
+	}
+	.carousel {
+		padding-top: 140px;
+	}
+}
+
+@media (max-width: 850px) {
+	.carousel {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.carousel__header {
+		display: block;
+	}
+	.carousel__header_title {
+		font-size: 30px;		
+	}
+	.carousel__header_image-min {
+		padding: 30px 15px 0 15px;
+	}
+	.carousel__action-items {
+		padding: 30px 0 40px 0;
+	}
+	.carousel__action-item {
+		min-width: 345px;
+		height: 365px;
+		padding: 40px 20px;
+	}
+	.carousel__action-item_header-logo {
+		display: none;
+	}
+	.carousel__action-item_header-text_title {
+		font-weight: 800;
+		font-size: 16px;
+	}
 }
 
 /* =================== question =================== */
@@ -1162,10 +1207,6 @@ body {
 	padding: 0 0 65px 0;
 }
 
-.question__content_text-list {
-	
-}
-
 .question__content_text-list_item {
 	border-bottom: 1px solid #050607;
 	padding-top: 35px;
@@ -1180,10 +1221,11 @@ body {
 
 .question__content_text-list_question-text {
 	font-weight: 800;
-		font-size: 20px;
-		line-height: 100%;	
-		text-transform: uppercase;	
-		color: #050607;
+	font-size: 20px;
+	line-height: 100%;	
+	text-transform: uppercase;	
+	color: #050607;
+	display: flex;
 }
 
 .question__content_text-list_question img {
@@ -1207,15 +1249,55 @@ body {
 	left: 75%;
 }
 
+@media (max-width: 850px) {
+	.question__container {
+		padding: 50px 15px 0 15px;
+	}
+	.question__container_sign-img {
+		display: none;
+	}
+	.question {
+		padding-top: 0;
+	}
+
+	.carousel__action-items {
+		margin: auto;
+	}
+
+	.question__content_text-list_item {
+		padding-bottom: 16px;
+	}
+
+	.question__content_title {
+		font-size: 30px;
+		padding-bottom: 5px;
+	}
+
+	.question__content_text-list_question-text_arr {
+		padding-left: 40px;
+	}
+
+	.question__content_text-list_question-text {
+		font-size: 18px;
+		display: flex;
+		
+	}
+
+	.question__content_text-list_answer {
+		font-size: 16px;
+		padding-bottom: 14px;
+	}
+}
+
 /* ============== form ================================== */
 
 .form {
-	padding-bottom: 110px;
+	padding: 0 15px 110px 15px;
 }
 
 .form__container {
 	display: flex;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 }
 
 .form__content_subtitle {
@@ -1260,8 +1342,89 @@ body {
 
 
 .form__image {
-	flex: 0 1 40%;
+	flex: 0 1 40%;	
 }
+
+.form__image-min {
+	display: none;
+}
+
+.form__image img {
+	padding-top: 45px;
+}
+
+@media (max-width: 1400px) {
+	.form__image img {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 1250px) {
+	.form__container {
+		flex-wrap: wrap;
+	}
+
+	.form__content {
+		flex: 0 1 100%;
+	}
+
+	.form__image-min {
+		display: block;
+		text-align: center;
+		padding-bottom: 35px;
+		max-width: 100%;
+	}
+
+	.form__image {
+		display: none;
+	}
+}
+
+@media (max-width: 850px) {
+	.form {
+		padding-bottom: 0;
+	}
+
+	.form__container {
+		flex-wrap: wrap;
+	}
+
+	.form__content {
+		flex: 0 1 100%;
+	}
+
+	.form__image-min {
+		display: block;
+		text-align: center;
+		padding-bottom: 35px;
+		/* width: 345px; */
+	}
+
+	.form__image-min img {
+		max-width: 100%;
+	}
+
+	.form__image {
+		display: none;
+	}
+
+	.form__content_form-req input {
+		width: 100%;
+		text-align: center;	
+		padding-left: 0;	
+		margin-left: 0;
+	}
+
+	.form__buton {
+		margin-top: 0;
+		font-family: 'Manrope';
+	}
+
+	.form__textarea p {
+		font-size: 14px;
+	}
+}
+
 
 
 /* =================================================== */
