@@ -599,8 +599,7 @@ body {
 }
 
 .delegation__content {
-	flex: 0 1 33%;
-	
+	flex: 0 1 33%;	
 }
 
 .delegation__content_list {
@@ -657,9 +656,78 @@ body {
 	left: 77%;
 }
 
+@media (max-width: 1200px) {
+	.delegation__container {
+		padding: 100px 40px;
+	}
+
+	.delegation__image img {
+		width: 100%;
+	}
+
+	.delegation__content_list-module_title-first img {
+		margin-left: 10px;
+	}
+
+	.delegation__content {
+		margin-left: 10px;
+	}
+}
+
+@media (max-width: 950px) {
+	.delegation{
+		padding-top: 70px;
+	}
+	.delegation__container {
+		padding: 50px 15px;
+	}
+
+	.delegation__content {
+		flex: 0 1 100%;
+	}
+
+	.delegation__image {
+		padding: 40px 0 30px 0;
+	}
+
+	.delegation__content_list {
+		flex: 0 1 100%;
+	}
+
+	.delegation__content_title {
+		font-size: 30px;
+	}
+	.delegation__content_list-module {
+		padding: 20px;
+	}
+
+	.delegation__content_button, .delegation__container_sign-img {
+		display: none;
+	}
+	
+
+	.delegation__content_button-min {
+		display: block;
+		margin-top: 10px;
+	}
+
+	.delegation__content_list-module_title-first {
+		position: relative;
+		width: 85%;
+		font-size: 14px;
+		font-weight: 800;
+	}
+
+	.delegation__content_list-module_title-first img {
+		margin: 0;
+		left: 107%;
+		top: 10%;
+	}
+}
+
 /* ========== stages ================== */
 .stage {
-	
+	padding: 0 15px;
 }
 
 .stage__container {}
@@ -717,6 +785,55 @@ body {
 	line-height: 150%;	
 	color: #474747;
 	font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+	.stage__content_items {
+		justify-content: space-around;
+	}
+
+	.stage__content_item {
+		flex: 0 1 45%;
+	}
+}
+
+@media (max-width: 850px) {
+	.stage__content_title {
+		font-size: 30px;
+	}
+
+	.stage__content_item-subtitle {
+		font-weight: 500;
+		font-size: 16px;
+	}
+
+	.stage__content_buttons-button {
+		font-weight: 700;
+		font-size: 16px;
+		padding: 10px 16px;
+	}
+
+	.stage__content_items {
+		justify-content: center;
+		display: block;
+	}
+
+	.stage__content_item {
+		flex: 0 1 100%;
+	}
+
+	.stage__content_item-container {
+		justify-content: start;
+	}
+
+	.stage__content_item-title {
+		font-size: 18px;
+	}
+
+	.stage__content_item-subtitle {
+		font-weight: 500;
+		font-size: 16px;
+	}
 }
 
 
