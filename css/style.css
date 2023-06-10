@@ -1,4 +1,7 @@
 /* Обнуление */
+._none {
+	display: none;
+}
 *,
 *::before,
 *::after {
@@ -1159,6 +1162,10 @@ body {
 
 ._arrleft {
 	rotate: 180deg;
+}
+
+.carousel__action-counter_points {
+	display: flex;
 }
 
 .carousel__action-counter_point {
