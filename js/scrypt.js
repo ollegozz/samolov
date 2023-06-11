@@ -16,6 +16,19 @@ function sliderInit() {
 
     const arrImages = getImage(itemsImage)
 
+    sliderPoint.innerHTML = '<div class="carousel__action-counter_point"></div>'.repeat(itemsImage.length);
+    let dots = document.querySelectorAll(".carousel__action-counter_point");
+
+    dots.forEach(element => {
+        return element
+    });
+
+    let dot = dots
+
+    dot[0].classList.add('_dot-active')
+
+
+
     let count = 1
 
     arrRight.addEventListener('click', function () {
@@ -35,6 +48,8 @@ function sliderInit() {
 
         } else (
             arrImages[count].style.marginLeft = margin,
+            dot[count].classList.add('_dot-active'),
+            dot[count - 1].classList.remove('_dot-active'),
             count++
         )
     })
@@ -43,11 +58,11 @@ function sliderInit() {
         if (count <= 1) {
         } else (
             arrImages[count - 1].style.marginLeft = '0px',
+            dot[count - 2].classList.add('_dot-active'),
+            dot[count - 1].classList.remove('_dot-active'),
             count--
         )
     })
-
-    sliderPoint.innerHTML = '<div class="carousel__action-counter_point"></div>'.repeat(itemsImage.length);
 }
 
 sliderInit()
@@ -59,12 +74,23 @@ function showBurger() {
 
     birgerButton.addEventListener('click', function () {
         burgerMenu.classList.toggle('_burger_active'),
-        buttonAuth.classList.toggle('burger__auth')
-        console.log('burger');
+            buttonAuth.classList.toggle('burger__auth')
     })
-
-
-    
 }
 
 showBurger()
+
+
+function onEntry(entry) {
+    entry.forEach(change => {
+        if (change.isIntersecting) {
+            change.target.classList.add('element-show');
+        }
+    });
+}
+let options = { threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation');
+for (let elm of elements) {
+    observer.observe(elm);
+}
