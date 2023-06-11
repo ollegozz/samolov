@@ -53,11 +53,18 @@ function sliderInit() {
 sliderInit()
 
 function showBurger() {
-    let sliderPoint = document.querySelector(".menu__burger");
+    let birgerButton = document.querySelector(".menu__burger-button");
+    let burgerMenu = document.querySelector("._menu__burger");
+    let buttonAuth = document.querySelector("._button_auth");
 
-    sliderPoint.addEventListener('click', function () {
+    birgerButton.addEventListener('click', function () {
+        burgerMenu.classList.toggle('_burger_active'),
+        buttonAuth.classList.toggle('burger__auth')
         console.log('burger');
     })
+
+
+    
 }
 
 showBurger()

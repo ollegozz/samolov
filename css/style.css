@@ -1,7 +1,4 @@
 /* Обнуление */
-._none {
-	display: none;
-}
 *,
 *::before,
 *::after {
@@ -197,9 +194,31 @@ body {
 	color: #EA501E;
 } */
 
-.menu__burger {
+.menu__burger-button {
 	display: none;
 }
+
+.burger__auth{	
+	display: none;
+}
+
+._button_auth {	
+	background: #CBE3BF;
+	border-radius: 50px;
+	padding: 13px 36px;
+	margin: 25px 25px 50px 25px;
+}
+
+._button_auth a{
+	color: #050607;
+	font-weight: 700;
+}
+
+._none {
+	display: none;
+}
+
+
 
 @media (max-width: 1290px) {
 	.header__container {
@@ -220,10 +239,45 @@ body {
 		display: none;
 	}
 
-	.menu__burger {
+	.menu__burger-button {
 		display: flex;
 		padding-right: 15px;
 	}
+
+	.burger__auth {
+		display: none;
+		margin: 25px 0;
+	}
+
+	.burger__auth a{
+		color: #050607;
+		font-weight: 700;
+	}
+
+	/* ============ */
+
+		._menu__burger {
+			display: block;
+			background: rgb(255, 255, 255);
+			position: absolute;
+			top: 12%;
+			right: 2%;
+			width: 95%;
+			z-index: 100;
+		}
+
+		._menu__burger li {
+			padding: 10px 0;
+			text-align: center;
+			margin-right: 0;
+		}
+		
+		._burger_active {
+			display: none;
+		}
+
+
+	/* =========== */
 
 	.header__container {
 		justify-content: space-between;
