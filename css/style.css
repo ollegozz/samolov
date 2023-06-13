@@ -1823,3 +1823,16 @@ body {
 		text-align: center;
 	}
 }
+
+
+
+
+
+
+.dropdown-content {
+	display: none;
+}
+
+.show {
+	display: block;
+}

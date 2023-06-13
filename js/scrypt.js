@@ -94,3 +94,20 @@ let elements = document.querySelectorAll('.element-animation');
 for (let elm of elements) {
     observer.observe(elm);
 }
+
+
+
+function showDropLost() {
+    let drop = document.querySelectorAll(".listDrop");
+
+
+    drop.forEach(item => {
+        item.addEventListener('click', e => {
+            item.querySelector('.myDropdown').classList.toggle("show"),
+                item.querySelector('.dropbtn').classList.toggle("_none"),
+                item.querySelector('.dropbtn-close').classList.toggle("_none")
+        });
+    });
+}
+
+showDropLost()
